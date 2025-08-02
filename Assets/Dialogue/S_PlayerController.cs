@@ -13,7 +13,7 @@ public class S_PlayerController : MonoBehaviour
     Vector2 moveDir = Vector2.zero;
 
     [HideInInspector]
-    public NPC_Interact currentInteractable = null;
+    public Interactable currentInteractable = null;
 
     private void Awake()
     {
@@ -49,7 +49,7 @@ public class S_PlayerController : MonoBehaviour
     {
         if (currentInteractable != null)
         {
-            currentInteractable.TriggerDialogue();
+            currentInteractable.Interact();
             currentInteractable = null;  // Optionally clear so repeated presses advance dialogue
         }
         else if (DialogueManager.Instance != null && DialogueManager.Instance.IsTypingOrOpen())
