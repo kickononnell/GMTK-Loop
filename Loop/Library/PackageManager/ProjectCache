@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638896626218038386
-    m_Hash: 3425854411
+      ticks: 638897039547879670
+    m_Hash: 4019280922
   m_LockFileStatus:
     m_FilePath: C:/Users/135st/OneDrive/Documents/GitHub/GMTK-Loop/Loop/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638896626218078410
-    m_Hash: 3383506682
+      ticks: 638897039547889680
+    m_Hash: 483553625
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
