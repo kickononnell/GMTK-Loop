@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class S_PlayerController : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    public Rigidbody rb;
     public float moveSpeed = 5f;
 
     public PlayerInputActions playerControls;
@@ -27,15 +27,12 @@ public class S_PlayerController : MonoBehaviour
 
         interactAction = playerControls.Player.Interact;
         interactAction.Enable();
-
-        interactAction.performed += Interact;
     }
 
     private void OnDisable()
     {
         moveAction.Disable();
         interactAction.Disable();
-        interactAction.performed -= Interact;
     }
 
     private void Update()
@@ -48,7 +45,7 @@ public class S_PlayerController : MonoBehaviour
         rb.linearVelocity = moveDir * moveSpeed;
     }
 
-    private void Interact(InputAction.CallbackContext context)
+    public void Interact()
     {
         if (currentInteractable != null)
         {
