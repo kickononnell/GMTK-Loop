@@ -16,6 +16,7 @@ public class FPS_Mouse_Rotation : MonoBehaviour
     [SerializeField] float maxSpeed = 10f;
     [SerializeField] float jumpForce = 10f;
     [SerializeField] float gravSpeed = 10f;
+    [SerializeField] float dragAmount = .1f;
     public bool canJump = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -88,7 +89,7 @@ public class FPS_Mouse_Rotation : MonoBehaviour
         Vector3 velDir = playerRigidBody.linearVelocity;
         velDir *= -1f; // reverse direction
         velDir.y = 0;
-        playerRigidBody.linearVelocity += velDir*.07f;
+        playerRigidBody.linearVelocity += velDir* dragAmount;
     }
 
     void AddGravity()
