@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6d4ca3da182954398f19862a30c9f4, type: 3}
+  m_Name: ElectricianEvent
+  m_EditorClassIdentifier: 
+  tag: Electrician
+  dialogueLines:
+  - text: HELP MEEEEE!
+  - text: ' I''M SO HUNGRY AND NEED FOOD.'
+  - text: YOU ARE NAUGHT BUT A PUPPET FOR A GREATER POWER.
+  - text: LO!
+  - text: TAKE MY COIN AND GET ME A DELICIOUS BAG OF SPACE CHIPS FROM THE SPAAAACE
+      VENDING MACHINE BY YONDER HEARTH.
+  - text: JUST DONT GET THE NACHO CHEESE SPACE CHIPS, I PREFER THE SPACE SALT AND
+      SPACE VINEGAR ONES!
+  nextEvent: {fileID: 11400000, guid: 4ee114710db63764ba53a7aaa65ef296, type: 2}

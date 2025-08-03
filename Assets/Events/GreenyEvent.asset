@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f6d4ca3da182954398f19862a30c9f4, type: 3}
-  m_Name: CleanerFirstEvent
+  m_Name: GreenyEvent
   m_EditorClassIdentifier: 
-  tag: Cleaner
+  tag: Greeny
   dialogueLines:
-  - text: "This job blows, I\u2019m pissed."
-  - text: I gotta get some chemicals from the store room, can you unlock House Alpha
-      for me?
-  - text: Take this Key pal.
-  nextEvent: {fileID: 11400000, guid: 61c7a40ed6997a7498b6d0b64f713fb8, type: 2}
+  - text: Sorry pal.
+  - text: "Can\u2019t let anyone in these Sewers."
+  - text: "Ah, I hope nobody comes by and throws some salt on me, that\u2019d make
+      my day go south real quick."
+  nextEvent: {fileID: 11400000, guid: 653285264f3a21348a2422e9f635767f, type: 2}
