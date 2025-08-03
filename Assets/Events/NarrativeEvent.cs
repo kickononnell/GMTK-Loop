@@ -1,10 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class NarrativeEvent
+[CreateAssetMenu(fileName = "NarrativeEvent", menuName = "Scriptable Objects/NarrativeEvent")]
+public class NarrativeEvent : ScriptableObject
 {
-    public Interactable interactable;
-    public virtual void Event()
-    {
-
-    }
+    public string tag;
+    public List<DialogueLine> dialogueLines;
+    public NarrativeEvent nextEvent;
 }

@@ -1,20 +1,35 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NarrativeSystem : MonoBehaviour
 {
-    private NarrativeEvent narrativeEvent;
-    public Interactable tnt;
+    public NarrativeEvent narrativeEvent;
+    public Interactable interactable;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        AddEvent(new StartEvent());
+        LoadEvent();
     }
 
-    void AddEvent(NarrativeEvent newEvent)
+    public void NextEvent()
     {
-        narrativeEvent = newEvent;
-        narrativeEvent.interactable.onInteract += narrativeEvent.Event;
+        if (narrativeEvent.nextEvent)
+        {
+            narrativeEvent = narrativeEvent.nextEvent;
+            LoadEvent();
+        }
+    }
+
+    private void LoadEvent()
+    {
+        Debug.Log(narrativeEvent.tag);
+        interactable = GameObject.FindWithTag(narrativeEvent.tag).GetComponent<Interactable>();
+        if (narrativeEvent.dialogueLines.Count > 0 && interactable.GetComponent<NPC_Interact>())
+        {
+            ((NPC_Interact)interactable).dialogueLines = narrativeEvent.dialogueLines;
+        }
+        interactable.AddInteraction(NextEvent);
     }
 }
