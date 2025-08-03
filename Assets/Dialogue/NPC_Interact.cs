@@ -9,7 +9,7 @@ public class NPC_Interact : Interactable
 
     public void Start()
     {
-        onInteract = StartDialogue;
+        onInteract += StartDialogue;
     }
 
     public void StartDialogue()
