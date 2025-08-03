@@ -3,7 +3,12 @@ guid: 04dfaa155e8e49f4cb9529a09f8a8402
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PoolSkimmer.png
+    second: {fileID: 2100000, guid: 38d14b0cb56f89e49b5714304842f0bf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
