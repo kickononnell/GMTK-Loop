@@ -57125,7 +57125,7 @@ MonoBehaviour:
   vidP: {fileID: 594819478}
   vidImage: {fileID: 630262540}
   HouseDestroyVideoObj: {fileID: 254580931}
-  AccelerateOpacitySpeed: 0
+  AccelerateOpacitySpeed: 1
 --- !u!43 &1024302836
 Mesh:
   m_ObjectHideFlags: 0

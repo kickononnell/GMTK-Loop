@@ -16,10 +16,10 @@ public class NarrativeSystem : MonoBehaviour
 
     public void NextEvent()
     {
-        if (narrativeEvent.isBombEvent)
+        /*if (narrativeEvent.isBombEvent)
         {
             StartCoroutine(loopManager.PlayEndVid());
-        }
+        }*/
         if (narrativeEvent.nextEvent)
         {
             narrativeEvent = narrativeEvent.nextEvent;
