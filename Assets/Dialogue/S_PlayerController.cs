@@ -20,6 +20,11 @@ public class S_PlayerController : MonoBehaviour
         playerControls = new PlayerInputActions();
     }
 
+    private void Start()
+    {
+        
+    }
+
     private void OnEnable()
     {
         moveAction = playerControls.Player.Move;

@@ -5,6 +5,8 @@ public class SceneTiming : MonoBehaviour
 {
     public float timer;
     public float timerToResetInSeconds = 400f;
+    private bool isStarted;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,12 +16,20 @@ public class SceneTiming : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer > timerToResetInSeconds) ResetScene();
+        if (isStarted)
+        {
+            timer += Time.deltaTime;
+            if (timer > timerToResetInSeconds) ResetScene();
+        }
     }
 
     public void ResetScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void StartTimer()
+    {
+        isStarted = true;
     }
 }
