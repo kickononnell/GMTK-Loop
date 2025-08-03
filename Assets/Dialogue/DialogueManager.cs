@@ -42,6 +42,7 @@ public class DialogueManager : MonoBehaviour
         portraitImage.sprite = npc.portrait;
 
         currentLines = npc.dialogueLines;
+        npc.dialogueLines = null;
         currentLineIndex = 0;
         dialoguePanel.SetActive(true);
 
