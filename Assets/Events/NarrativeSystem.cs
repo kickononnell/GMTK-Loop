@@ -4,7 +4,7 @@ using UnityEngine;
 public class NarrativeSystem : MonoBehaviour
 {
     public NarrativeEvent narrativeEvent;
-    public Interactable interactable;
+    private Interactable interactable;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
