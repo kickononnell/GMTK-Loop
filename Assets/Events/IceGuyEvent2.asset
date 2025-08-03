@@ -20,4 +20,4 @@ MonoBehaviour:
   - text: "Huge favor, you know I can\u2019t get my hands dirty when a girl's coming
       by, ya dig?"
   - text: "I\u2019ll unlock House Delta, trust me, ya dig?"
-  nextEvent: {fileID: 11400000, guid: e9aba41fa012648478d76caea5589517, type: 2}
+  nextEvent: {fileID: 11400000, guid: d2610dd79c68bcc4e992eb2be1d82521, type: 2}

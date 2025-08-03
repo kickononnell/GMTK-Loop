@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: MagnetEvent
   m_EditorClassIdentifier: 
   tag: Magnet
+  isBombEvent: 1
   dialogueLines: []
   nextEvent: {fileID: 11400000, guid: 84bdef9e15d827c44a8694d31336ab48, type: 2}

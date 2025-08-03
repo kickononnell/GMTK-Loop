@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: HouseADoorEvent
   m_EditorClassIdentifier: 
   tag: HouseADoor
+  isBombEvent: 1
   dialogueLines: []
   nextEvent: {fileID: 11400000, guid: a0d3a6676d1d294449dbde0b6bee70b6, type: 2}

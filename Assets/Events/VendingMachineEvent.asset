@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tag: VendingMachine
   dialogueLines: []
-  nextEvent: {fileID: 11400000, guid: 61c7a40ed6997a7498b6d0b64f713fb8, type: 2}
+  nextEvent: {fileID: 11400000, guid: 37a1308590ce1d04cbd5b3fcd578ae54, type: 2}

@@ -6,6 +6,18 @@ TagManager:
   tags:
   - HouseADoor
   - Cleaner
+  - Electrician
+  - VendingMachine
+  - FuseBox
+  - GooGuy
+  - SaltShaker
+  - Stubby
+  - Stilts
+  - IceGuy
+  - Magnet
+  - Bomb
+  - AnnoyingNeighbor
+  - Pizza
   layers:
   - Default
   - TransparentFX

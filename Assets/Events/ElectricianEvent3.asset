@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tag: Electrician
   dialogueLines:
-  - text: that screwdriver opens up the fuse box attached to one of these houses.
-  - text: "i might\u2019ve wired this place hungry so something\u2026 interesting
+  - text: That screwdriver opens up the fuse box attached to one of these houses.
+  - text: "I might\u2019ve wired this place hungry so something\u2026 interesting
       might happen if you mess around with it."
   nextEvent: {fileID: 11400000, guid: c511254e6e9f8574f9eb6b13cfcbbebb, type: 2}
