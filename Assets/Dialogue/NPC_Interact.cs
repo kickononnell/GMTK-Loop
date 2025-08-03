@@ -1,37 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC_Interact : MonoBehaviour
+public class NPC_Interact : Interactable
 {
     public string speakerName;
     public Sprite portrait;
     public List<DialogueLine> dialogueLines;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void Start()
     {
-        if (other.CompareTag("Player"))
-        {
-            var playerController = other.GetComponent<S_PlayerController>();
-            if (playerController != null)
-            {
-                playerController.currentInteractable = this;
-            }
-        }
+        onInteract = StartDialogue;
     }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            var playerController = other.GetComponent<S_PlayerController>();
-            if (playerController != null && playerController.currentInteractable == this)
-            {
-                playerController.currentInteractable = null;
-            }
-        }
-    }
-
-    public void TriggerDialogue()
+    public void StartDialogue()
     {
         DialogueManager.Instance?.StartDialogue(this);
     }
