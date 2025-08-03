@@ -54,6 +54,7 @@ public class Interactable : MonoBehaviour
 
     public void Interact()
     {
-        onInteract.Invoke();
+        onInteract?.Invoke();
+        onInteract = null;
     }
 }

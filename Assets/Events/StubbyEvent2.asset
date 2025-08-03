@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f6d4ca3da182954398f19862a30c9f4, type: 3}
-  m_Name: HouseADoorEvent
+  m_Name: StubbyEvent2
   m_EditorClassIdentifier: 
-  tag: HouseADoor
-  isBombEvent: 1
-  dialogueLines: []
-  nextEvent: {fileID: 11400000, guid: a0d3a6676d1d294449dbde0b6bee70b6, type: 2}
+  tag: Stubby
+  dialogueLines:
+  - text: HI THERE!
+  - text: Over in that pretty House Charlie are some stilts.
+  - text: Bring me those and you can have this key that fell from up there!
+  - text: Win-Win!
+  nextEvent: {fileID: 11400000, guid: 3a620bc7175a2c8438842e61deb4b2a3, type: 2}

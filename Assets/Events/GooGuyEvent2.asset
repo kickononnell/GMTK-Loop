@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f6d4ca3da182954398f19862a30c9f4, type: 3}
-  m_Name: HouseADoorEvent
+  m_Name: GooGuyEvent2
   m_EditorClassIdentifier: 
-  tag: HouseADoor
-  isBombEvent: 1
-  dialogueLines: []
-  nextEvent: {fileID: 11400000, guid: a0d3a6676d1d294449dbde0b6bee70b6, type: 2}
+  tag: GooGuy
+  dialogueLines:
+  - text: Ah jeez.
+  - text: "You got a big salt shaker, guess my day\u2019s goin\u2019 south."
+  - text: Shucks.
+  - text: "Guess I\u2019ll flow to the end of the pipes, ah dang."
+  - text: This is a real pain.
+  nextEvent: {fileID: 11400000, guid: 073f7c5e37cc37643b2c8b8266ca5500, type: 2}

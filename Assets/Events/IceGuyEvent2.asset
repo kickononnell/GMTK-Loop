@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6d4ca3da182954398f19862a30c9f4, type: 3}
+  m_Name: IceGuyEvent2
+  m_EditorClassIdentifier: 
+  tag: IceGuy
+  dialogueLines:
+  - text: Sup.
+  - text: Thanks for fetching that magnet, bud.
+  - text: Do me a solid and open the dumpster now?
+  - text: "Huge favor, you know I can\u2019t get my hands dirty when a girl's coming
+      by, ya dig?"
+  - text: "I\u2019ll unlock House Delta, trust me, ya dig?"
+  nextEvent: {fileID: 11400000, guid: d2610dd79c68bcc4e992eb2be1d82521, type: 2}

@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f6d4ca3da182954398f19862a30c9f4, type: 3}
-  m_Name: HouseADoorEvent
+  m_Name: AnnoyingNeighborEvent2
   m_EditorClassIdentifier: 
-  tag: HouseADoor
-  isBombEvent: 1
-  dialogueLines: []
-  nextEvent: {fileID: 11400000, guid: a0d3a6676d1d294449dbde0b6bee70b6, type: 2}
+  tag: AnnoyingNeighbor
+  dialogueLines:
+  - text: Ah sweet, my pizza is here!
+  - text: "Can\u2019t wait to jam out with my favorite slice:"
+  - text: Durian and Tripe.
+  nextEvent: {fileID: 0}

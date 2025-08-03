@@ -5,6 +5,7 @@ using UnityEngine;
 public class NarrativeEvent : ScriptableObject
 {
     public string tag;
+    public bool isBombEvent = false;
     public List<DialogueLine> dialogueLines;
     public NarrativeEvent nextEvent;
 }

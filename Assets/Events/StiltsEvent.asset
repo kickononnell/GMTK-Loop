@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f6d4ca3da182954398f19862a30c9f4, type: 3}
-  m_Name: HouseADoorEvent
+  m_Name: StiltsEvent
   m_EditorClassIdentifier: 
-  tag: HouseADoor
-  isBombEvent: 1
+  tag: Stilts
   dialogueLines: []
-  nextEvent: {fileID: 11400000, guid: a0d3a6676d1d294449dbde0b6bee70b6, type: 2}
+  nextEvent: {fileID: 11400000, guid: e95174e6f3784894abe6bb2642a68b42, type: 2}
