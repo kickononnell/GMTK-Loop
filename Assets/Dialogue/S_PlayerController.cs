@@ -3,11 +3,11 @@ using UnityEngine.InputSystem;
 
 public class S_PlayerController : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float moveSpeed = 5f;
+    //public Rigidbody rb;
+    //public float moveSpeed = 5f;
 
     public PlayerInputActions playerControls;
-    private InputAction moveAction;
+    //private InputAction moveAction;
     private InputAction interactAction;
 
     Vector2 moveDir = Vector2.zero;
@@ -27,8 +27,8 @@ public class S_PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        moveAction = playerControls.Player.Move;
-        moveAction.Enable();
+        //moveAction = playerControls.Player.Move;
+        //moveAction.Enable();
 
         interactAction = playerControls.Player.Interact;
         interactAction.Enable();
@@ -36,18 +36,8 @@ public class S_PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
-        moveAction.Disable();
+        //moveAction.Disable();
         interactAction.Disable();
-    }
-
-    private void Update()
-    {
-        moveDir = moveAction.ReadValue<Vector2>();
-    }
-
-    private void FixedUpdate()
-    {
-        rb.linearVelocity = moveDir * moveSpeed;
     }
 
     public void Interact()
