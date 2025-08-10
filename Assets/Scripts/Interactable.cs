@@ -1,5 +1,3 @@
-using System;
-using UnityEditor.Rendering.Universal;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour

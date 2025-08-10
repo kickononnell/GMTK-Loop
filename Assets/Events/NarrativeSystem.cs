@@ -34,6 +34,7 @@ public class NarrativeSystem : MonoBehaviour
         if (narrativeEvent.dialogueLines.Count > 0 && interactable.GetComponent<NPC_Interact>())
         {
             ((NPC_Interact)interactable).dialogueLines = narrativeEvent.dialogueLines;
+            interactable.AddInteraction(((NPC_Interact)interactable).StartDialogue);
         }
         interactable.AddInteraction(NextEvent);
     }
